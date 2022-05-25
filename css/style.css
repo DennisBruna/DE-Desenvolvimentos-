@@ -21,6 +21,7 @@ body{
 .btn:hover{
     cursor: pointer;
     background: #000;
+    color: #0093ff;
 }
 .headline{
     font-size: 2.2rem;
@@ -33,7 +34,7 @@ body{
 #navbar{
     width: 100%;
     background: #111;
-    color: #eee;
+    color: #0093ff;
     height: 80px;
     position: fixed;
 }
@@ -47,6 +48,8 @@ body{
 }
 .logo{
     font-size: 1.5rem;
+    font-family: "Bauhaus 93";
+    color: #0093ff;
 }
 #navbar-items{
     display: flex;
@@ -57,19 +60,20 @@ body{
     padding: 10px;
 }
 #navbar-items li a{
-    color: #eee;
+    color: #0093ff;
     letter-spacing: 0.1rem;
+    text-decoration: none;
 }
 #showcase{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(250, 249, 249);
-    background: url(/imagem/pexels-burst-374018\ \(2\).jpg) no-repeat center center/cover;
+    color: #0093ff;
+    background: url(/imagem/pexels-luis-gomes-546819.jpg) no-repeat center center/cover;
 
     /* Overlay */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color;
 }
 #showcase-container{
@@ -79,14 +83,19 @@ body{
     font-size: 2.5rem;
 }
 #showcase-container p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-bottom: 7px;
+    color: #eee;
+}
+#showcase-container b{
+    color: #0CEDDD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Clientes */
 #clients{
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-color:#eee;
     color:rgb(0, 0, 0);
     padding: 50px;
@@ -95,11 +104,12 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding: 15px;
+    padding: 50px;
 }
 .client{
     display: inline-block;
-    width: 25%;
+    width: 38%;
+    padding: 100px 0 0 0;
 }
 
 /* About */
@@ -113,6 +123,7 @@ body{
 }
 #features-container{
     width: 100%;
+    height: 71vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,16 +136,22 @@ body{
     padding: 60px;
     border-radius: 5px;
 }
+.feature img{
+    width: 500px;
+    height: 390px;
+    margin-top: 30px;
+}
 .feature-title{
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Produtos */
 
 #product{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
 }
 #product-container{
